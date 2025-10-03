@@ -7,7 +7,7 @@
 //
 import Foundation
 
-extension String {
+public extension String {
   
   /// Converts each character to its UTF16 form in hexadecimal value (e.g. "H" -> "0048")
   func escapeUTF16() -> String {
