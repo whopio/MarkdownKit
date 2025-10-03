@@ -42,9 +42,9 @@ open class MarkdownParser {
   }
 
   // MARK: Element Arrays
-  fileprivate var escapingElements: [MarkdownElement]
-  fileprivate var defaultElements: [MarkdownElement] = []
-  fileprivate var unescapingElements: [MarkdownElement]
+  open var escapingElements: [MarkdownElement]
+  open var defaultElements: [MarkdownElement] = []
+  open var unescapingElements: [MarkdownElement]
   
   open var customElements: [MarkdownElement]
   
@@ -60,9 +60,9 @@ open class MarkdownParser {
   public let strikethrough: MarkdownStrikethrough
 
   // MARK: Escaping Elements
-  fileprivate var codeEscaping = MarkdownCodeEscaping()
-  fileprivate var escaping = MarkdownEscaping()
-  fileprivate var unescaping = MarkdownUnescaping()
+  public let codeEscaping = MarkdownCodeEscaping()
+  public let escaping = MarkdownEscaping()
+  public let unescaping = MarkdownUnescaping()
   
   // MARK: Configuration
   /// Enables individual Markdown elements and automatic link detection
