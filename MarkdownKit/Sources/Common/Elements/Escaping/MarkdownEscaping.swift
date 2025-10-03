@@ -11,6 +11,8 @@ open class MarkdownEscaping: MarkdownElement {
 
   fileprivate static let regex = "\\\\."
 
+  public init() {}
+
   open var regex: String {
     return MarkdownEscaping.regex
   }

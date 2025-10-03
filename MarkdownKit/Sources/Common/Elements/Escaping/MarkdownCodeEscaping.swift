@@ -11,6 +11,8 @@ open class MarkdownCodeEscaping: MarkdownElement {
 
   fileprivate static let regex = "(\\s+|^)(?<!\\\\)(?:\\\\\\\\)*+(\\`+)(.+?)(\\2)"
 
+  public init() {}
+
   open var regex: String {
     return MarkdownCodeEscaping.regex
   }

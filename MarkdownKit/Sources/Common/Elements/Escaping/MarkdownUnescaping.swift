@@ -10,6 +10,8 @@ import Foundation
 open class MarkdownUnescaping: MarkdownElement {
   
   fileprivate static let regex = "\\\\[0-9a-z]{4}"
+
+  public init() {}
   
   open var regex: String {
     return MarkdownUnescaping.regex
